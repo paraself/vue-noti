@@ -10,7 +10,7 @@ export default {
       msg: 'hello',
       pageHidden: false,
       notifyloc: 'bottom left',
-      width: '800px',
+      width: '200px',
       closeOnClicked: true
     }
   },

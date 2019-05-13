@@ -34,4 +34,15 @@ this.$globalnotify({
   text: 'Hello user! This is a notification!'
 })
 ```
+Api
+``` bash
+this.$globalnotify({
+  title: 'Important message',
+  text: 'Hello user! This is a notification!',
+  closeOnClicked?: true,
+  width?: '200px', // 宽度
+  position: 'left top' // 位置
+})
+```
+
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
