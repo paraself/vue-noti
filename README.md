@@ -1,48 +1,43 @@
-# vue-notify-global
+# vue-noti
+A Vue Notification plugin which fallback to web notification api when page visibility is off.
 
-> A Vue.js project
+**install**
+Make sure you have both ``vue`` and ``vue-notification`` as peer dependencies.
 
-## Install
+Init both ``vue-notification`` and ``vue-noti``
 
-``` bash
-# install dependencies
-npm install --save vue-notify-global
+``` javascript
+  import Vue from 'vue'
+  import Notifications from 'vue-notification'
+  import VueNoti from 'vue-noti'
+  Vue.use(Notifications)
+  Vue.use(VueNoti)
+```
+
+In App.vue:
 
 ```
-## How to
-
-In main.js:
-
-``` bash
-# install dependencies
-import Vue from 'vue'
-import NotifyGlobal from 'vue-notify-global'
-
-Vue.use(NotifyGlobal)
+<notifications group="foo" />
 ```
-In App.vue
 
-``` bash
-# install dependencies
-<Notify/>
-```
-In any of your vue files:
+Head to [vue-notification](https://www.npmjs.com/package/vue-notification) for a detailed documentation on how to config the notification component.
 
-``` bash
-this.$globalnotify({
+**Usage**
+
+In any of you vue script file, 
+
+```javascript
+this.$noti({
+  group: 'foo',
   title: 'Important message',
   text: 'Hello user! This is a notification!'
 })
 ```
-Api
-``` bash
-this.$globalnotify({
-  title: 'Important message',
-  text: 'Hello user! This is a notification!',
-  closeOnClicked?: true,
-  width?: '200px', // 宽度
-  position: 'left top' // 位置
-})
-```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+You can sue ```Vue.notify``` as well.
+
+**Test**
+
+To run the example, you have make sure  ```@vue/cli-service-global``` is installed globally. If you don't know how to do it, refer to [Vue Instant Prototyping](https://cli.vuejs.org/guide/prototyping.html) to see how to config the environment.
+
+Then just run ```npm run test``` to make the example working.
