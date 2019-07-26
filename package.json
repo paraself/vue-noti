@@ -1,6 +1,6 @@
 {
   "name": "vue-noti",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A Vue Notification plugin which fallback to web notification api when page visibility is off.",
   "main": "index.js",
   "scripts": {
