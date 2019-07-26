@@ -2,6 +2,9 @@
 A Vue Notification plugin which fallback to web notification api when page visibility is off.
 
 **install**
+
+```npm i vue-noti```
+
 Make sure you have both ``vue`` and ``vue-notification`` as peer dependencies.
 
 Init both ``vue-notification`` and ``vue-noti``
